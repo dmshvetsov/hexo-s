@@ -27,7 +27,7 @@
 	a, 
   a:visited { 
     text-decoration: none; 
-    color: @active-link;
+    color: @link;
     outline: 0;
     -webkit-transition: color 0.2s ease-in;
     -moz-transition: color 0.2s ease-in;
@@ -35,15 +35,11 @@
     transition: color  0.2s ease-in;
   }
 
-  a:visited { 
-    color: @visited-link; 
-  }
-	
   a:hover, 
   a:focus { 
     color: @hover-link; 
   }
-	
+
   p a, 
   p a:visited { 
     line-height: inherit; 
@@ -51,10 +47,10 @@
 
   article { 
     a {
-      color: @active-link-alt;
+      color: @link;
     }
     a:hover {
-      color: @active-link;
+      color: @hover-link;
     }
 
     .meta {
@@ -85,8 +81,9 @@
     list-style: decimal; 
   }
   
-  ul { 
-    list-style: circle; 
+  ul {
+    margin-left: 1.5em;
+    list-style: none;
   }
 	
   li ul, 
